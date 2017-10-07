@@ -1,5 +1,6 @@
 import tkinter as tk; #Tkinter for canvas
 from msvcrt import getch; #Getch for keypresses
+import sys;
 
 #Input and error handling
 while True:	#Tile Width input
@@ -106,7 +107,6 @@ def invcheckered(canvas, line_distanceW, line_distanceH):
 	  
 checkered(bgcan, tilewidth, tileheight)
 
-
 def key(event):
 	print("Inverting...")
 	global inv
@@ -127,6 +127,11 @@ def key(event):
 		else:
 			break
 
+def key1(event):
+	sys.exit(0)
+
 master.bind("a", key) #bind keypress to a
+master.bind("q", key1) #bind keypress to q
+bgcan.focus_force()
 
 tk.mainloop() #Avoids program end
