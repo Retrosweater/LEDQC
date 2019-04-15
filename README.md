@@ -11,3 +11,5 @@ The "a" key will invert the canvas to determine if any of the edge pixels are mi
 The "q" key will close out of the canvas.
 
 I would eventually like to implement a way to save the canvas, so you don't have to reinput tile size or keep cmd.exe opened.
+
+Requires Python 3.4 or later.
